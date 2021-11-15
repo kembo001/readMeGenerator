@@ -22,5 +22,5 @@ inquirer.prompt([
 ]).then(answers => {
     console.log(answers)
     const sentence = `Hello, my name is ${answers.name}, I am feeling ${answers.feeling} and it currently is ${answers.time}`
-    fs.writeFileSync("test.md", sentence)
+    fs.writeFileSync("README.md", sentence)
 })
